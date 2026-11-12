@@ -1,18 +1,7 @@
 name: Build KukSense EXE
 
+# Manual only (owner rule: no automatic app builds). Start it from the Actions tab: Run workflow.
 on:
-  push:
-    branches:
-      - agent/hardware-free-mvp
-    paths:
-      - 'tools/kuksense-rssi/windows/**'
-      - '.github/workflows/build-kuksense-exe.yml'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'tools/kuksense-rssi/windows/**'
-      - '.github/workflows/build-kuksense-exe.yml'
   workflow_dispatch:
 
 permissions:
