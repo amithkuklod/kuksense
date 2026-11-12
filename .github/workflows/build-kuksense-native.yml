@@ -1,10 +1,6 @@
 name: Build KukSense Native Windows
+# Manual only (owner rule: no automatic app builds). Start it from the Actions tab: Run workflow.
 on:
-  push:
-    branches: [agent/native-windows-v1, main]
-    paths: ['apps/kuksense-windows/**', '.github/workflows/build-kuksense-native.yml']
-  pull_request:
-    paths: ['apps/kuksense-windows/**', '.github/workflows/build-kuksense-native.yml']
   workflow_dispatch:
 permissions:
   contents: read
